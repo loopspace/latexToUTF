@@ -1,15 +1,16 @@
 <?php
 
 $alphabets = array(
-		   '"' => 'uml',
-		   '`' => 'grave',
-		   "'" => 'acute',
-		   '^' => 'circ',
-		   '~' => 'tilde',
-		   'c' => 'cedil',
-		   'v' => 'caron',
-		   '.' => 'dot',
-		   'mathbb' => 'opf'
+		   '"' => '&#1uml;',
+		   '`' => '&#1grave;',
+		   "'" => '&#1acute;',
+		   '^' => '&#1circ;',
+		   '~' => '&#1tilde;',
+		   'c' => '&#1cedil;',
+		   'v' => '&#1caron;',
+		   '.' => '&#1dot;',
+		   'mathbb' => '&#1opf;'
+		   'H' => '#1&#779;'
 		   );
 
 $symbols = array(
@@ -2395,7 +2396,7 @@ function _addtolist()
 	{
 	  if (array_key_exists($matches[1],$alphabets))
 	    {
-	      $output =  "&" . $matches[2] . $alphabets[$matches[1]] . ";";
+	      $output =  preg_replace('/#1/', $matches[2], $alphabets[$matches[1]]);
 	    }
 	  else
 	    {
@@ -2406,7 +2407,7 @@ function _addtolist()
 	{
 	  if (array_key_exists($matches[1],$alphabets))
 	    {
-	      $output =  "&" . $matches[2] . $alphabets[$matches[1]] . ";";
+	      $output =  preg_replace('/#1/', $matches[2], $alphabets[$matches[1]]);
 	    }
 	  else
 	    {

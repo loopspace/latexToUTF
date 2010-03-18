@@ -9,7 +9,7 @@ $alphabets = array(
 		   'c' => '&#1cedil;',
 		   'v' => '&#1caron;',
 		   '.' => '&#1dot;',
-		   'mathbb' => '&#1opf;'
+		   'mathbb' => '&#1opf;',
 		   'H' => '#1&#779;'
 		   );
 

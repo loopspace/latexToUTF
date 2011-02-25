@@ -2245,7 +2245,7 @@ for ($i = 0; $i< count($greek); $i++)
 
 for ($i = 0; $i < count($symbols_one); $i++)
   {
-    $symbols[$symbols_one[$i]] = $symbols_one;
+    $symbols[$symbols_one[$i]] = $symbols_one[$i];
   }
 
 function name2numbered($content)

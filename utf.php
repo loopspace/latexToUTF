@@ -2338,7 +2338,7 @@ header ('content-type: application/xhtml+xml; charset=utf-8');
 var request;
 function get_unicode()
 {
-  url = "http://www.math.ntnu.no/~stacey/code/latexToUTF/utf.php";
+  url = "https://code.mathforge.org/latexToUTF/utf.php";
   frm = document.getElementById('utfform');
   tex = frm.tex.value;
   params =  "tex=" + tex + "&ajax=1&output=utf8";
